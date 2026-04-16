@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Boitshoko Mphahlele</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="Style/Styles.css" rel="stylesheet">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="Scripts/Script.js"></script>
+    <meta name="description" content="Portfolio of Boitshoko Mphahlele, aspiring software developer specializing in C#, Angular, and web development.">
+    <meta name="keywords" content="software developer, portfolio, C#, Angular, ASP.NET, web development">
+    <meta name="author" content="Boitshoko Mphahlele"> 
+</head>
+
+<body>
+
+<header>
+    <h1>Boitshoko Mphahlele</h1>
+    <nav>
+        <a href="Home.html">Home</a>
+        <a href="About.html">About</a>
+        <a href="Skills.html">Skills</a>
+        <a href="Projects.html">Projects</a>
+        <a href="Contact.html" class="active">Contact Me</a>
+    </nav>
+</header>
+
+<section>
+    <h2 class="section-title">Contact Me</h2>
+
+    <div class="contact-container">
+
+        <div class="contact-info">
+            <h3>Get in Touch</h3>
+            <p>If you'd like to work together or have any questions, feel free to reach out.</p>
+
+            <p><strong>Email:</strong> boitshokontshoekgolo@gmail.com</p>
+            <p><strong>Phone:</strong> +27 79 500 1751</p>
+            <p><strong>Location:</strong> Pretoria, South Africa</p>
+        </div>
+
+        <form id="contact-form" class="contact-form">
+
+            <input type="text" name="from_name" placeholder="Your Name" required>
+            <input type="email" name="reply_to" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+
+            <button type="submit" class="btn">Send Message</button>
+
+            <p id="status-message"></p>
+        </form>
+
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Boitshoko Mphahlele | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
+
+<script>
+  (function(){
+    emailjs.init("8AAH22qijDTaFFfAx");
+  })();
+</script>
